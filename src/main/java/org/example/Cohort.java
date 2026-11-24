@@ -3,7 +3,6 @@ package org.example;
 import assessments.AssessmentFeed;
 import java.util.ArrayList;
 
-// Manager class: holds all students and the main logic
 public class Cohort {
     // Polymorphism: one list holds every kind of Student
     // Encapsulation: the list is private
@@ -43,7 +42,6 @@ public class Cohort {
     public int getCount() { return students.size(); }
     public Student getStudent(int index) { return students.get(index); }
 
-    // User story 2: technical report in the console
     public void printReport() {
         System.out.println("===== Assessment Report =====");
         for (Student s : students) {

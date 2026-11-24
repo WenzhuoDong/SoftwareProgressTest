@@ -28,7 +28,6 @@ public abstract class Student {
     public abstract String getType();
     public abstract double getWeighting(Assessment a);
 
-    // Weighted mean = sum(weight x mark) / sum(weight)
     public double getModuleMark() {
         double total = 0;
         double weightSum = 0;
@@ -40,7 +39,6 @@ public abstract class Student {
         return total / weightSum;
     }
 
-    // Unweighted average of AI-permitted (true) or non-AI (false) assessments
     public double getAverage(boolean aiPermitted) {
         double sum = 0;
         int count = 0;
@@ -58,7 +56,6 @@ public abstract class Student {
         return getAverage(true) - getAverage(false) >= 20;
     }
 
-    // Final mark for one assessment type, or "N/A" if the student doesn't take it
     public String getMarkText(String title) {
         for (Assessment a : assessments) {
             if (a.getTitle().equals(title)) {
