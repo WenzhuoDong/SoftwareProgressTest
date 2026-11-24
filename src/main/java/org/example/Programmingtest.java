@@ -3,11 +3,11 @@ package org.example;
 import assessments.AssessmentFeed;
 
 // Inheritance: ProgrammingTest is an Assessment. New kinds can be added the same way.
-public class ProgrammingTest extends Assessment {
+public class Programmingtest extends Assessment {
     private final double programMark;
     private final boolean explainedSuccessfully;
 
-    public ProgrammingTest(double programMark, boolean explainedSuccessfully) {
+    public Programmingtest(double programMark, boolean explainedSuccessfully) {
         super(AssessmentFeed.PROGRAMMING_TEST, 100);
         this.programMark = programMark;
         this.explainedSuccessfully = explainedSuccessfully;
