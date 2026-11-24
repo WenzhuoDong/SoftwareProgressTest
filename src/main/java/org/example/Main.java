@@ -9,6 +9,7 @@ public class Main {
         cohort.printReport();
 
         GridDisplay display = new GridDisplay(cohort);
+
         JFrame frame = new JFrame("Assessment Results");
         frame.add(display);
         frame.setSize(1100, 300);
