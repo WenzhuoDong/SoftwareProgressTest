@@ -2,7 +2,7 @@ package org.example;
 
 import assessments.AssessmentFeed;
 
-// Inheritance: AIProject is an Assessment
+// Inheritance: AIProject is an Assessment.
 public class AIProject extends Assessment {
     private final double functionalityMark;
     private final double verificationMark;
@@ -13,7 +13,7 @@ public class AIProject extends Assessment {
         this.verificationMark = verificationMark;
     }
 
-    // Polymorphism: this version runs for AIProject objects
+    // Polymorphism: this version runs for AIProject objects.
     @Override
     public double getFinalPercentage() {
         return 0.4 * functionalityMark + 0.6 * verificationMark;

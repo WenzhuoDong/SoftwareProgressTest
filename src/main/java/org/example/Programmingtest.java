@@ -13,13 +13,13 @@ public class Programmingtest extends Assessment {
         this.explainedSuccessfully = explainedSuccessfully;
     }
 
-    // Polymorphism: this version runs for ProgrammingTest objects
+    // Polymorphism: this version runs for ProgrammingTest objects.
     @Override
     public double getFinalPercentage() {
         if (explainedSuccessfully) {
             return programMark;
         } else {
-            return Math.min(programMark, 40);   // 没讲解成功，封顶 40
+            return Math.min(programMark, 40);
         }
     }
 

@@ -2,7 +2,7 @@ package org.example;
 
 import assessments.AssessmentFeed;
 
-// Inheritance: DesignViva is an Assessment (MSc students only)
+// Inheritance: DesignViva is an Assessment (MSc students only).
 public class DesignViva extends Assessment {
     private final double designMark;
     private final double explanationMark;
@@ -13,7 +13,7 @@ public class DesignViva extends Assessment {
         this.explanationMark = explanationMark;
     }
 
-    // Polymorphism: this version runs for DesignViva objects
+    // Polymorphism: this version runs for DesignViva objects.
     @Override
     public double getFinalPercentage() {
         return 0.5 * designMark + 0.5 * explanationMark;

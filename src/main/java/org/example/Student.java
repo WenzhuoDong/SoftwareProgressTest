@@ -5,10 +5,10 @@ import java.util.ArrayList;
 // Inheritance + Abstraction: common data for every Student.
 // Abstract because a student is always either UG or MSc.
 public abstract class Student {
-    // Encapsulation: fields are private and only read through getters
+    // Encapsulation: fields are private and only read through getters.
     private final String name;
     private final String cid;
-    // Polymorphism: one list holds every kind of Assessment
+    // Polymorphism: one list holds every kind of Assessment.
     private final ArrayList<Assessment> assessments = new ArrayList<>();
 
     public Student(String name, String cid) {
@@ -24,7 +24,7 @@ public abstract class Student {
         assessments.add(a);
     }
 
-    // Abstraction: UG and MSc each provide their own version
+    // Abstraction: UG and MSc each provide their own version.
     public abstract String getType();
     public abstract double getWeighting(Assessment a);
 

@@ -4,8 +4,8 @@ import assessments.AssessmentFeed;
 import java.util.ArrayList;
 
 public class Cohort {
-    // Polymorphism: one list holds every kind of Student
-    // Encapsulation: the list is private
+    // Polymorphism: one list holds every kind of Student.
+    // Encapsulation: the list is private.
     private final ArrayList<Student> students = new ArrayList<>();
 
     public Cohort() {
@@ -46,7 +46,7 @@ public class Cohort {
         System.out.println("===== Assessment Report =====");
         for (Student s : students) {
             System.out.println(s.getName() + " (CID " + s.getCid() + ", " + s.getType() + ")");
-            // Polymorphism: each assessment runs its own method
+            // Polymorphism: each assessment runs its own method.
             for (Assessment a : s.getAssessments()) {
                 System.out.println("  " + a.getTitle() + ": " + String.format("%.2f", a.getFinalPercentage()) + "%");
                 System.out.println("    " + a.getDetails());

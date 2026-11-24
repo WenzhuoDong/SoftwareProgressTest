@@ -4,7 +4,7 @@ import assessments.AssessmentFeed;
 import javax.swing.*;
 import java.awt.*;
 
-// Abstraction: the display only asks the cohort for data, it stores none
+// Abstraction: the display only asks the cohort for data, it stores none.
 public class GridDisplay extends JPanel {
     private static final String[] HEADERS = {"Name", "CID", "Type",
             AssessmentFeed.PROGRAMMING_TEST, AssessmentFeed.AI_PROJECT,

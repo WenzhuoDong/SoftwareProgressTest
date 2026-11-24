@@ -1,6 +1,6 @@
 package org.example;
 
-// Inheritance: UGStudent is a Student
+// Inheritance: UGStudent is a Student.
 public class UGStudent extends Student {
     public UGStudent(String name, String cid) {
         super(name, cid);
@@ -9,7 +9,7 @@ public class UGStudent extends Student {
     @Override
     public String getType() { return "UG"; }
 
-    // Polymorphism: UG weightings
+    // Polymorphism: UG weightings.
     @Override
     public double getWeighting(Assessment a) {
         if (a instanceof Programmingtest) return 0.30;
